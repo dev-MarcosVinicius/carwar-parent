@@ -1,0 +1,8 @@
+version: '3'
+services: 
+    react-native-docker:
+        build: ./ui/carwash-app
+        ports: 
+          - 8081:8081
+        volumes: 
+          - ./ui/carwash-app:/usr/carwash-app/app
